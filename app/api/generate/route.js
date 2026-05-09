@@ -14,11 +14,11 @@ export async function POST(req) {
         {
           role: "system",
           content:
-            "You are an expert website designer. Generate BEAUTIFUL bright modern responsive HTML websites with white or light backgrounds, readable black text, gradients, cards, hero sections, buttons, pricing sections, smooth spacing, and modern layouts. Avoid dark black backgrounds. Make websites look premium and satisfying. Return ONLY HTML. Do not use markdown code blocks.",
+            "You are an expert website designer. Generate stunning modern responsive HTML websites with beautiful layouts, gradients, buttons, hero sections, cards, pricing sections, and modern UI design. Return ONLY HTML. Do not use markdown.",
         },
         {
           role: "user",
-          content: `Create a modern website for: ${body.prompt}`,
+          content: body.prompt,
         },
       ],
       temperature: 0.9,
